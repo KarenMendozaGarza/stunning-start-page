@@ -1,0 +1,74 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #bebebe;
+  font-family: Georgia, serif;
+  color: #323232;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto 10em auto;
+  grid-template-rows: auto 1.5rem;
+  grid-template-areas:
+    "left center right"
+    ".    center    .";
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  grid-area: center;
+  margin: 0;
+  z-index: 0;
+}
+
+nav {
+  background-color: #bd027d;
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0 1rem;
+  padding: 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+nav a {
+  padding: .5em .8em;
+  background-color: #bd027d;
+
+}
+
+/* - *Typefaces:* `Georgia`, `PT Sans Narrow`
+- *Text sizes:* `1.125rem`, `0.875rem`, `1.25rem`
+- *Line-heights:* `1.5`
+- *Colours:* `#000`, `#fff`, `#afafaf`, `#ccc`, `#323232`, `#bebebe`, ` `, `#960062`, `#eccee2`
+- *Gaps:* `1rem`
+- *Margins:* `.5em`, `1.5rem`
+- *Paddings:* `.5em .8em`, `.5em`, `1rem`, `1.5rem`
+- *Border thicknesses:* `2px`
+- *Corner-radii:* `6px`, `1em 0 0 1em` */
+/*
+font-family: 'PT Sans Narrow', sans-serif;
+*/
